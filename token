@@ -1,0 +1,13 @@
+github client id and secret: https://github.com/settings/applications/1111107
+
+in client we installed:
+    - axios
+    - react router via react-router-dom for version 4
+    - redux
+    - react-redux
+    - redux-thunk which is middleware to make a sync request in our actions
+    - redux-devtools-extension
+    - moment
+    - react-moment to use moment within the component
+
+    Fragment is a ghost element that will show up in the dom.
