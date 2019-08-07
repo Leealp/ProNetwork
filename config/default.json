@@ -1,0 +1,7 @@
+{
+    
+    "mongoURI":"mongodb+srv://alpha123:alpha123@devnet-gqwse.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "3950aced2e97dd1580e9",
+    "githubSecret": "cfde4ff798b5ccba960f17fb7b4fc49b196d8c10"
+}
