@@ -87,14 +87,14 @@ const CreateProfile = ({ createProfile, history }) => {
         <div className="form-group">
           <input type="text" placeholder="Location" name="location" value={location} onChange={e => onChange(e)} />
           <small className="form-text">
-            City & state suggested (eg. Boston, MA)
+            City & state suggested (eg. Dallas, Tx)
           </small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="* Skills" name="skills" value={skills} onChange={e => onChange(e)} />
           <small className="form-text">
             Please use comma separated values (eg.
-            HTML,CSS,JavaScript,PHP)
+            Marketing Analytics,JavaScript,Machine Learning, etc.)
           </small>
         </div>
         <div className="form-group">
@@ -152,7 +152,7 @@ const CreateProfile = ({ createProfile, history }) => {
 
         
         <input type="submit" className="btn btn-primary my-1" />
-        <Link className="btn btn-light my-1" to="dashboard">Go Back</Link>
+        <Link className="btn btn-light my-1" to="/dashboard">Go Back</Link>
       </form>      
     </Fragment>
   )

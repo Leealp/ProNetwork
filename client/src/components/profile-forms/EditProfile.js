@@ -6,7 +6,8 @@ import { createProfile, getCurrentProfile } from "../../actions/profile";
 
 const EditProfile = ({ 
     profile: { profile, loading}, 
-    createProfile, getCurrentProfile, 
+    createProfile, 
+    getCurrentProfile, 
     history 
 }) => { 
     const [formData, setFormData] = useState({
@@ -147,7 +148,7 @@ const EditProfile = ({
           <span>Optional</span>
         </div>
 
-        {displaySocialInputs && <Fragment>
+        {displaySocialInputs && (<Fragment>
         <div className="form-group social-input">
           <i className="fab fa-twitter fa-2x"></i>
           <input type="text" placeholder="Twitter URL" name="twitter" value={twitter} onChange={e => onChange(e)} />
@@ -172,11 +173,12 @@ const EditProfile = ({
           <i className="fab fa-instagram fa-2x"></i>
           <input type="text" placeholder="Instagram URL" name="instagram" value={instagram} onChange={e => onChange(e)}/>
         </div>
-        </Fragment>}
+        </Fragment>
+        )}
 
         
         <input type="submit" className="btn btn-primary my-1" />
-        <Link className="btn btn-light my-1" to="dashboard">Go Back</Link>
+        <Link className="btn btn-light my-1" to="/dashboard">Go Back</Link>
       </form>      
     </Fragment>
   )
