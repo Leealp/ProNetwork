@@ -73,7 +73,7 @@ const EditProfile = ({
   return (
     <Fragment>
         <h1 className="large text-primary">
-        Create Your Profile
+        Edit Your Profile
       </h1>
       <p className="lead">
         <i className="fas fa-user"></i> Let's get some information to make your
@@ -85,12 +85,12 @@ const EditProfile = ({
           <select name="status"  value={status} onChange={e => onChange(e)}>
             <option value="0">* Select Professional Status</option>
             <option value="Developer">Developer</option>
-            <option value="Junior Developer">Junior Developer</option>
-            <option value="Senior Developer">Senior Developer</option>
-            <option value="Manager">Manager</option>
-            <option value="Student or Learning">Student or Learning</option>
-            <option value="Instructor">Instructor or Teacher</option>
-            <option value="Intern">Intern</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Accounting">Accounting</option>
+            <option value="General Medecine, Doctor">General Medecine, Doctor</option>
+            <option value="Finance">Finance</option>
+            <option value="Education, Instructor or Teacher">Education, Instructor or Teacher</option>
+            <option value="Entrepreneur">Entrepreneur</option>
             <option value="Other">Other</option>
           </select>
           <small className="form-text"

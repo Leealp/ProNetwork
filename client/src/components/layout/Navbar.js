@@ -9,7 +9,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <ul>
       <li>
         <Link to='/profiles'>
-        Developers
+        Professionals
         </Link>
       </li>
       <li>
