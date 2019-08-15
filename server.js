@@ -9,6 +9,7 @@ connectDB();
 
 //init middleware
 app.use(express.json({extended: false}));
+app.use(express.static("public"))
 
 const PORT = process.env.PORT||8080;
 
@@ -19,14 +20,14 @@ app.use('/api/profile', require('./routes/api/profile'));   //api/users refers t
 app.use('/api/posts', require('./routes/api/posts'));       //api/users refers to '/' in posts.js
 
 // Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-    // Set static folder
-    app.use(express.static('client/build'));
+// if (process.env.NODE_ENV === 'production') {
+//     // Set static folder
+//     app.use(express.static('client/build'));
   
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    });
-  }
+//     app.get('*', (req, res) => {
+//       res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+//     });
+//   }
 
 
 app.listen(PORT, () => console.log(`Server is up and running on port ${PORT}`))
