@@ -30,4 +30,6 @@ app.use('/api/posts', require('./routes/api/posts'));       //api/users refers t
 //   }
 
 
-app.listen(PORT, () => console.log(`Server is up and running on port ${PORT}`))
+// app.listen(PORT, () => console.log(`Server is up and running on port ${PORT}`));
+app.listen(PORT, () => console.log("Server is up and running on port" + 8080));
+
