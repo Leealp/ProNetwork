@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Leealp/ProNetwork#readme",
   "dependencies": {
+    "nodemon": "^1.19.1",
     "bcrypt": "^3.0.6",
     "bcryptjs": "^2.4.3",
     "config": "^3.2.2",
