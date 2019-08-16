@@ -10,8 +10,7 @@
   "scripts": {
     "test": "node server",
     "client": "npm start --prefix client",
-    "server": "server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "server": "server.js"
   },
   "repository": {
     "type": "git",
