@@ -25,3 +25,4 @@ https://www.facebook.com/lyalpha71
 
 https://www.linkedin.com/in/alpha-ly-8372a915/
 
+ "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
