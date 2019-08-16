@@ -9,7 +9,6 @@
   "main": "server.js",
   "scripts": {
     "test": "node server",
-    "start": "nodemon server.js",
     "client": "npm start --prefix client",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
