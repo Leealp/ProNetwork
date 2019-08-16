@@ -9,8 +9,10 @@
   "main": "server.js",
   "scripts": {
     "test": "node server",
+    "start": "nodemon server.js",
     "client": "npm start --prefix client",
-    "server": "server.js"
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -30,10 +32,11 @@
     "express-validator": "^6.1.1",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.6.8",
+    "mongoose": "^5.6.9",
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "concurrently": "^4.1.1"
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
   }
 }
