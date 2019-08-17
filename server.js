@@ -14,10 +14,10 @@ app.use(express.static("public"))
 const PORT = process.env.PORT||8080;
 
 //defines Routes (require the routes in auth.js, profile.js, posts.js, and users.js)
-app.use('/api/users', require('./routes/api/users'));       //api/users refers to '/' in users.js
-app.use('/api/auth', require('./routes/api/auth'));         //api/users refers to '/' in auth.js
-app.use('/api/profile', require('./routes/api/profile'));   //api/users refers to '/' in profile.js
-app.use('/api/posts', require('./routes/api/posts'));       //api/users refers to '/' in posts.js
+app.use('/api/users', require('./Routes/Api/users'));       //api/users refers to '/' in users.js
+app.use('/api/auth', require('./Routes/Api/auth'));         //api/users refers to '/' in auth.js
+app.use('/api/profile', require('./Routes/Api/profile'));   //api/users refers to '/' in profile.js
+app.use('/api/posts', require('./Routes/Api/posts'));       //api/users refers to '/' in posts.js
 
 // Serve static assets in production
 // if (process.env.NODE_ENV === 'production') {

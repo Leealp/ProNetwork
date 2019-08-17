@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { Link, withRouter, Redirect } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import { createProfile } from "../../actions/profile";
@@ -28,7 +28,6 @@ const CreateProfile = ({ createProfile, history }) => {
         location,
         status,
         skills,
-        githubusername,
         bio,
         twitter,
         facebook,
